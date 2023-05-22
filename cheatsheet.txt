@@ -1,0 +1,31 @@
+/// Commits y seguimiento
+- git rm --cached <file> : Git pasa a ignorar este archivo, no le hará más seguimiento y pasa a estado untracked.
+- git log : Historial de Commits con fecha, autor, mensaje y hash completo.
+- git log --oneline : Historial de commits con hash abreviado y mensaje.
+- git checkout <hash commit> : Se va a ese estado del commit.
+- git log --<ruta archivo> : Muestra historial de un archivo específico
+- git log --author=usuario : Muestra el historial de un usuario en particular.
+- git reset HEAD~1 : Devuelve último commit al staged area.
+- git commit --amend -m "nuevo mensaje" : Cambia mensajes del commit.
+- git restore . : Restaura hasta el último commit según donde estemos ubicados (file) hacia adentro.
+- git diff primerCommit segundCommit (son los números de los commits git log --oneline) : Me muestra diferencias entre commits.
+
+/// Configuración
+- git config --global --unset user.name "nombreUsuario" : Elimina registros de este usuario.
+- git config --global --unset user.email "email" : Elimina registros de este email.
+- git config --list : Lista de config.
+
+/// Remover archivos/directorios
+- git rm <archivo> : Remueve archivo.
+- git rm -r <directorio> : Remueve directorio y su contenido.
+
+/// Repositorios remotos
+- git remote -v : Ver repositorio remoto.
+- git remote rename origin nombre_nuevo : Renombra un repositorio remoto.
+- git remote rm nombre_git : Desvincula repositorio remoto.
+- git fetch : Obtener los cambios pero no aplicarlos a la rama actual.
+- git merge nombre-otra-rama : Se debe estar en la rama que recibirá los cambios.
+- git merge --abort o git reset --merge : Deshace merge.
+
+
+
